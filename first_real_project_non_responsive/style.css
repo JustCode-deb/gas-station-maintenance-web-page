@@ -1,0 +1,735 @@
+/* Configuracion base de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body    {
+    font-family: 'Lato', sans-serif;
+}
+/* Junto con el argumento aquí en css, en la etiqueta html, nos ayuda a evitar que el padding nos afecte cuando también deseamos usar un width o margin*/
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+p{
+    font-size: 1.4rem;
+}
+img{
+    max-width: 100%;
+}
+/* ESTILOS GLOBALES*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+.contenedor_1{
+    max-width: 1000rem;
+    margin: 0 5rem 0 15rem;
+}
+.tamaño{
+    width: 15rem; height: 15rem;
+}
+
+/*UTILIDADES*/
+.justify{
+    text-align: justify;
+}
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.mrg-top{
+    margin-top: 10rem;
+}
+.center-p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10rem;
+}
+.centrar-mapa{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0rem 0rem 0rem;
+}
+/*CENTRAR PAGINA*/
+
+/*HEADER*/
+.site_header.inicio{
+    margin-top: 1rem;
+    background-image: url(img/gasolinera_ini.jpg);
+    background-position:center center ;
+    background-size: cover;
+    height: 90vh; /*<--Ajustar las foto al tamaño de las pantallas*/
+    min-height: 60rem;/*<--Establecer el tamaño minimo de la imagen*/
+}
+.header-serv{
+    background-image: url(img/servicios.png);
+    margin-top: 1rem;
+    max-width: 100%;
+    background-size: cover;
+    height: 90vh; /*<--Ajustar las foto al tamaño de las pantallas*/
+    min-height: 60rem;
+    background-position:center center ;
+}
+.header-ahorro{
+    background-image: url(img/Ahorro-gasolina.jpg);
+    margin-top: 1rem;
+    max-width: 100%;
+    background-size: cover;
+    height: 90vh; /*<--Ajustar las foto al tamaño de las pantallas*/
+    min-height: 60rem;
+    background-position:center center ;
+}
+.header-uso-gas{
+    background-image: url(img/Ahorro-gasolina-background.jpg);
+    margin-top: 1rem;
+    max-width: 100%;
+    background-size: cover;
+    height: 90vh; /*<--Ajustar las foto al tamaño de las pantallas*/
+    min-height: 60rem;
+    background-position:center center ;
+}
+.header-uso-gas{
+    background-image: url(img/manguera-quebrada.png);
+    margin-top: 1rem;
+    max-width: 100%;
+    background-size: cover;
+    height: 90vh; /*<--Ajustar las foto al tamaño de las pantallas*/
+    min-height: 60rem;
+    background-position:center center ;
+}
+
+.barra{
+    display:flex;
+    padding-top: 0.5rem;
+    align-items: center;
+    margin-bottom: -3.5rem;
+}
+.contenido_header{
+    padding-top: 70rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    line-height: 5rem;
+}
+.contenido_header a{
+    border: #ffffff 2px solid;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    margin: auto;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.6rem;  
+    line-height: 0.5rem; 
+}
+.sub-title{
+    font-weight: 500;
+    text-align: center  ;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+/*BOTONES*/
+.boton_azul{
+    color: white;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: #29166F;
+    border-width: 2px;
+    background-color: #29166F;
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+
+}
+.boton_blanco{
+    display: flex;
+}
+/*iconos*/
+.iconos_nosotros{
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+}
+.icono{
+    text-align: center;
+}
+.icono img{
+    margin-top: 10rem;
+    flex-basis: calc(33.3% - 20rem);
+    max-width: 20rem;
+    margin-bottom: 0;
+}
+.icono h2{
+    color: #646464; 
+}
+.icono p{
+    max-width: 30rem;
+    text-align: justify;
+}
+.mas_sobrenosotros{
+    font-weight: 400;
+    color: #868686;
+    text-align: center;
+}
+/* AQUE NOS DEDICAMOS*/
+.new{
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.new-01{
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    color:#868686 ;
+}
+.clientes_img{
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(33.3% - 45rem);
+    width: 30rem; height: 10rem;
+}
+.imagen-dedicamos{
+    width: 50rem;
+    height: 25rem;
+}
+.texto{
+    text-align: center;
+    margin-right: 5rem;
+}
+.texto p{
+    text-align: justify;
+    margin-right: 5rem;
+}
+.texto-01{
+    text-align: center;
+    max-width: 50rem;
+}
+.texto-02{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+   
+}
+.imagen-ubicacion{
+    display: flex;
+    max-width: 10rem;
+    margin: 2rem auto 0 auto;
+    align-items: center;
+}
+/*NAVEGACION*/
+.navegacion{
+    display: flex;
+    float: left;
+    align-items: center;
+}
+.navegacion a:hover{
+    color: #29166F;
+}
+.navegacion a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 3rem;
+    font-weight: 700;
+}
+.navegacion a:last-of-type{
+    margin-right: 5rem;
+}
+
+.navegacion a:first-of-type{
+    margin-left: 5rem;
+}
+/************bottom*****/
+.nav-bottom{
+    display: flex;
+    float: left;
+    align-items: center;
+}
+.nav-bottom a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-right: 3rem;
+    font-weight: 700;
+}
+.nav-bottom:last-of-type{
+    margin-right: 5rem;
+}
+.nav-bottom:first-of-type{
+    margin-left: 5rem;
+}
+/*****************************************************/
+.portal{
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: #29166F;
+    border-width: 2px;
+    background-color: #29166F;
+}
+.portal a{
+    color: #ffffff;
+}
+.portal a:hover{
+    color: #ffffff;
+}
+/*SLIDER*/
+#clients {
+    background-color: #a8a8a8;
+    align-content: center;
+  }
+  #clients .clients-wrap {
+    overflow: hidden;   
+  }
+  #clients .clients-wrap ul li {
+    display: inline-block;
+    width: 110px;
+    height: 90px;
+    line-height: 70px;
+    text-align: center;
+  }
+  #clients .clients-wrap ul li img {
+    vertical-align: middle;
+    max-width: 90%;
+    max-height: 90%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    filter: alpha(opacity=65);
+    opacity: 0.50;
+  }
+/*footer*/
+.ing{
+    padding: 1rem;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 1.5rem;
+}
+
+.clientes{
+    background-color: #868686;
+}
+.title{
+    color: #646464;
+    text-align: center;
+    margin-top: 15rem;
+}
+.end{
+    
+    background-color: #29166F; 
+    display: flex;
+    align-items: center;
+}
+.end h5{
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.20rem;
+    text-align:end;
+    margin-right: 5rem;
+}
+.end img{
+    margin-top:1rem ;
+    width: 30px;
+    height: 30px;
+    max-width: 90%;
+    max-height: 90%;
+}
+.end a{
+    color: #ffffff;
+}
+.img-end{
+    display:flex;
+    flex-direction: column;
+    margin-top:2rem ;
+    margin-bottom: 0.5rem;
+}
+
+.center{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*****SERVICIOS********/
+.asd{
+    display: flex;
+    justify-content: space-between;
+}
+.dp{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.dp img{
+    max-width: 4.5rem;
+}
+.dp h3{
+    font-weight: 700;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+}
+.arrelglos-iconos-serv{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.calidad{
+    margin-top: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+}
+.calidad img{
+    max-width: 10rem;
+
+}
+.calidad h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+/*** FORMULARIO CONTACTO ****/
+
+label{
+    display: block;
+    font-size: 1.5rem;
+}
+
+input:not([Type="submit"]),textarea{
+    padding: 1rem;
+    border-radius: 1rem;
+    border-color: #29166F;
+    border-style: solid;
+    border-width: 1px;
+    width: 95%;
+    margin-bottom: 10rem;
+    font-size: 1.5rem;
+
+}
+input[type="file"] {
+    border-style: none;
+    background-color: #29166F;
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    
+}
+textarea{
+    width: 150%;
+    height: 10rem;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+
+
+/*********CONTACTO*********/
+
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-contact{
+    padding: 5rem;
+    margin-top: 15rem;
+    color: #ffffff;
+    background-color: #29166F;
+    border-style: solid;
+    border-radius: 5rem;
+    margin-bottom: auto;
+    text-align: center;
+}
+/******BLOG****/
+.link-blogs{
+    text-decoration: none;
+}
+.link-blogs h2{
+    color: #000000;
+    margin-right: 3rem;
+    font-weight: 700;
+}
+.link-blogs h2:hover{
+    color: #29166F;
+}
+blockquote{
+    font-size: 1.5rem;
+}
+.texto-blog{
+    margin-top: 10rem;
+
+}
+.contenido-blog{
+    margin-bottom: 5rem;
+}
+.contenido-blog h3{
+    font-size: 2rem;
+    background-color: #29166F;
+    border-style: solid;
+    border-color: #29166F;
+    border-radius: 2rem;
+    text-align: center;
+    color: #ffffff;
+    
+}
+.contenido-blog blockquote{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/*****************RESPONSIVE****************/
+@media (max-width: 1426px){
+    .nav-bottom a{
+        font-size: 1.5rem;
+    }
+   .navegacion a{
+       font-size: 1.5rem;
+   }
+   .contenido_header{
+    padding-top: 70rem;
+    line-height: 2rem;
+    
+    }
+}
+@media (max-width: 1382px){
+    .nav-bottom a{
+        font-size: 1.3rem;
+    }
+    .navegacion a{
+        font-size: 1.3rem;
+    }
+    .contenido_header{
+        padding-top: 50rem;
+        line-height: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .contenedor{
+        max-width: 1100px;
+    }
+    .img-end img{
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    #clients .clients-wrap ul li{
+        max-width: 10.5rem;
+    }
+}
+@media (max-width: 1294px){
+    .nav-bottom a{
+        font-size: 1.12rem;
+    }
+    .navegacion a{
+        font-size: 1.25rem;
+    }
+    .clients-list img{
+        max-width: 1rem; 
+    }
+    .new img{
+        max-width: 70%;
+    }
+    .icono{
+        max-width: 20%;
+    }
+    .new h2{
+        font-size: 1.5rem;
+    }
+    .new blockquote{
+        font-size: 1.2rem;
+    }
+    .contenedor{
+        max-width: 1100px;
+    }
+    #clients .clients-wrap ul li img {
+        max-width: 70%;
+        max-height: 70%;
+        margin: 0;
+        padding: 5px 0 5px 0;
+    }
+    #clients .clients-wrap ul li{
+        max-width: 10.5rem;
+    }
+    .contenido_header{
+    padding-top: 55rem;
+    line-height: 2rem;
+    
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .img-end img{
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+}
+@media (max-width: 1272px){
+
+    .nav-bottom a{
+        font-size: 1rem;
+    }
+    .navegacion a{
+        font-size: 1rem;
+    }
+    .clients-list img{
+        max-width: 1rem; 
+    }
+    .new img{
+        max-width: 70%;
+    }
+    .icono{
+        max-width: 20%;
+    }
+    .new h2{
+        font-size: 1.5rem;
+    }
+    .new blockquote{
+        font-size: 1.2rem;
+    }
+    .contenedor{
+        max-width: 1100px;
+    }
+    #clients .clients-wrap ul li img {
+        max-width: 70%;
+        max-height: 70%;
+        padding: 5px 0 5px 0;
+    }
+    #clients .clients-wrap ul li{
+        max-width: 8.7rem;
+    }
+    .contenido_header{
+    padding-top: 50rem;
+    line-height: 2rem;
+    
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    .img{
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+}
+@media (max-width: 1162px){
+    .tamaño img{
+        max-width: 80%;
+
+    }
+    .nav-bottom a{
+        font-size: 0.7rem;
+    }
+    .navegacion a{
+        font-size: 0.7rem;
+    }
+    .clients-list img{
+        max-width: 1rem; 
+    }
+    .new img{
+        max-width: 70%;
+    }
+    .icono{
+        max-width: 20%;
+    }
+    .new h2{
+        font-size: 1.5rem;
+    }
+    .new blockquote{
+        font-size: 1.2rem;
+    }
+    .contenedor{
+        max-width: 900px;
+    }
+    .img{
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    #clients .clients-wrap ul li img {
+        max-width: 6rem;
+        max-height: 6rem;
+        padding: 5px 0 5px 0;
+    }
+    #clients .clients-wrap ul li{
+        max-width: 8.7rem;
+    }
+    .contenido_header{
+    padding-top: 100rem;
+    line-height: 2rem;
+    
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 960px){
+    .contenido_header{
+        padding-top: 70rem;
+    }
+    .contenedor_1{
+        max-width: 100%;
+        margin: 0;
+    }
+    .navegacion a{
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    .end h5{
+        font-size: 1rem;
+    }
+}
